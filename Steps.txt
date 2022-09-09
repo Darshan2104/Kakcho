@@ -1,7 +1,9 @@
 Open Virtual env:
-
    Kakcho folder : >.\env\Scripts\activate
 
+Migrations:
+	python manage.py makemigrations
+	python manage.py migrate
+	
 Run Django Project:
-
 	Python mange.py runserver
