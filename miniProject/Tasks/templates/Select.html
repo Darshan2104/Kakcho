@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Select Your task!!!!</h1>
+    <h2><b><a href="{% url 'upload_file' %}">Upload new file</a></b></h2>
+    <a href="{% url 'task1' %}">Task 1</a>
+    <a href="{% url 'task2' %}">Task 2</a>
+    <a href="{% url 'task3' %}">Task 3</a>
+
+    <!-- jinja!!!! -->
+    <!-- What ever the link you will select that many numbers of file will be listed with <a> tag adding download at the last!!!! -->
+    <h1>Result of task :{{task}}</h1>
+    {% for a in obj%}
+    <a href="{{file_path}}/{{a}}" download>{{a}}</a><br>
+    {% endfor %}
+
+</body>
+
+</html>

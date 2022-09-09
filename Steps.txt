@@ -1,0 +1,7 @@
+Open Virtual env:
+
+   Kakcho folder : >.\env\Scripts\activate
+
+Run Django Project:
+
+	Python mange.py runserver
